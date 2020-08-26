@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.root {
+    background-color: #658cf0;
+    border: solid black 6px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.layout-principal {
+   width: 35%;
+   height: 95%;
+   background-color: white;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   overflow: hidden;
+}
+
+.chat-container {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex: 10;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chat-container::after{
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: rgb(216, 213, 213);
+    display: block;
+    margin: 0 auto;
+}
+
+.chat-container:hover{
+    background-color: rgb(224, 219, 219);
+}
+
+.container-span {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-perfil {
+    width: 70px;
+    height:70px;
+    border-radius: 50% ;
+    margin-left: 12px;
+    margin-top: 12px;
+    flex: 1;
+}
+
+.span-name {
+    font-size: 1.1em;
+    margin-left: 20px;
+    margin-top: 25px;  
+}
+
+.span-msg {
+    font-size: 0.9em;
+    font-style: inherit;
+    margin-left: 20px;
+    color: rgb(192, 192, 192);
+}
